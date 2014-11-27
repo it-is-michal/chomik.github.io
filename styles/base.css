@@ -1,0 +1,35 @@
+html, body {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "LatoLatin", sans-serif;
+    color: #35322D;
+    background-color: #FFF;
+}
+
+#content {
+    width: 80%;
+    min-width: 320px;
+    max-width: 780px;
+    font-size: 22pt;
+    margin: 4rem auto;
+    padding: 1rem;
+}
+
+#content a, #content a:hover, #content a:active, #content a:visited {
+    color: #FF2C4B;
+    text-decoration: none;
+}
+
+#photo, #avatar {
+    width: 120px;
+    border: 3px solid #35322D;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+.fa {
+    color: #FF2C4B;
+}
