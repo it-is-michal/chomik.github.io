@@ -45,8 +45,8 @@
                     <h2>Plan</h2>
                     <ul>
                         <li>TDD The Hard Way</li>
-                        <li>Transformacje</li>
-                        <li>Kata czyli live demo</li>
+                        <li>Transformacje, czyli <span class="orange">???</span></li>
+                        <li>Kata, czyli live demo</li>
                         <li><em>TPP</em></li>
                     </ul>
                 </section>
@@ -59,6 +59,12 @@
                             <em>D</em>ull
                             <em>D</em>uty</h1>
                     </section>
+                </section>
+                <section>
+                    <img src="tdd_cycle.svg" class="without_border"/>
+                </section>
+                <section>
+                    <img src="tdd_cycle_transformations.svg" class="without_border"/>
                 </section>
                 <section>
                     <h2>TDD tl;dr</h2>
@@ -80,8 +86,9 @@
                 <section>
                     <h2>Założenia</h2>
                     <ol>
-                        <li>no upfront design</li>
-                        <li>tests → more specific; code → more general</li>
+                        <li>brak z góry wybranego rozwiązania</li>
+                        <li>testy → bardziej szczegółowe</li>
+                        <li>kod produkcyjny → bardziej ogólny</li>
                     </ol>
                 </section>
                 <section>
@@ -93,18 +100,18 @@
                 <section>
                     <h2>Transformation Priority Premise</h2>
                     <ol style="font-size: 60%; line-height: 120%;">
-                        <li><em>∅ → nil:</em> no code at all → code that employs nil</li>
-                        <li><em>nil → constant:</em></li>
-                        <li><em>constant → constant+:</em> a simple constant to a more complex constant</li>
-                        <li><em>constant → scalar:</em> replacing a constant with a variable or an argument</li>
-                        <li><em>statement → statements:</em> adding more unconditional statements.</li>
-                        <li><em>unconditional → if:</em> splitting the execution path</li>
-                        <li><em>scalar → array:</em></li>
-                        <li><em>array → container:</em></li>
-                        <li><em>statement → recursion:</em></li>
-                        <li><em>if → while:</em></li>
-                        <li><em>expression → function:</em> replacing an expression with a function or algorithm</li>
-                        <li><em>variable → assignment:</em> replacing the value of a variable.</li>
+                        <li><em>∅ → None</em> &nbsp;&nbsp;&nbsp;no code at all → code that employs None</li>
+                        <li><em>None → constant</em></li>
+                        <li><em>constant → constant+</em> &nbsp;&nbsp;&nbsp;a simple constant to a more complex constant</li>
+                        <li><em>constant → scalar</em> &nbsp;&nbsp;&nbsp;replacing a constant with a variable or an argument</li>
+                        <li><em>statement → statements</em> &nbsp;&nbsp;&nbsp;adding more unconditional statements</li>
+                        <li><em>unconditional → if</em> &nbsp;&nbsp;&nbsp;splitting the execution path</li>
+                        <li><em>scalar → array</em></li>
+                        <li><em>array → container</em></li>
+                        <li><em>statement → recursion</em></li>
+                        <li><em>if → while</em></li>
+                        <li><em>expression → function</em> &nbsp;&nbsp;&nbsp;replacing an expression with a function or algorithm</li>
+                        <li><em>variable → assignment</em> &nbsp;&nbsp;&nbsp;replacing the value of a variable</li>
                     </ol>
                     <p style="font-size: 40%; line-height: 110%;">
                         <a href="http://blog.8thlight.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html">http://blog.8thlight.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html</a>
