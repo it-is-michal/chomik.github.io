@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Red, ???, Green, PROFIT!</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/pykonik.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+                    <h1><span class="red">Red</span>, <span class="blue">???</span>, <span class="green">Green</span>, PROFIT!</h1>
+                </section>
+                <section>
+                    <h2 style="font-size: 180%;">michał chałupczak</h2>
+                    <p>michal@chalupczak.info<br>michal@pykonik.org</p>
+                    <p><a href="https://twitter.com/tochomik">@tochomik</a><br><a href="http://michal.chalupczak.info/">http://michal.chalupczak.info</a></p>
+                </section>
+                <section>
+                    <h2>Plan</h2>
+                    <ul>
+                        <li>TDD The Hard Way</li>
+                        <li>Transformacje a refactoring</li>
+                        <li>Kata czyli live demo</li>
+                        <li><em>TPP</em></li>
+                    </ul>
+                </section>
+                <section>
+                    <section>
+                        <h2><em>TDD</em></h2>
+                    </section>
+                    <section>
+                        <p><em>T</em>erribly</p>
+                        <p><em>D</em>ull</p>
+                        <p><em>D</em>uty
+                        </p>
+                    </section>
+                </section>
+                <section>
+                    <h2>TDD tl;dr</h2>
+                    <ol>
+                        <li class="red">napisz test, który nie przechodzi</li>
+                        <li class="green">spraw żeby test przechodził</li>
+                        <li>teraz możesz rozważyć <em>refactoring</em></li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>Trzy prawa TDD</h2>
+                    <p>Nie wolno napisać:</p>
+                    <ol>
+                        <li>ani linijki kodu produkcyjnego bez <em>fail</em>ującego testu</li>
+                        <li>więcej kodu testu niż to jest potrzebne, żeby test <em>fail</em>ował</li>
+                        <li>więcej kodu produkcyjnego niż to jest potrzebne, żeby test przechodził</li>
+                    </ol>
+                </section>
+                <section>
+                    <p>transformacje</p>
+                    <p><em>vs.</em></p>
+                    <p><em>refactoring</em></p>
+                </section>
+                <section>
+                    <h2>Założenia</h2>
+                    <ol>
+                        <li>no upfront design</li>
+                        <li>tests → more specific; code → more general</li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>Kata</h2>
+                </section>
+                <section>
+                    <!-- benefit?? -->
+                </section>
+                <section>
+                    <h2>The Transformations</h2>
+                    <ol style="font-size: 60%; line-height: 120%;">
+                        <li><em>∅ → nil:</em> no code at all → code that employs nil</li>
+                        <li><em>nil → constant:</em></li>
+                        <li><em>constant → constant+:</em> a simple constant to a more complex constant</li>
+                        <li><em>constant → scalar:</em> replacing a constant with a variable or an argument</li>
+                        <li><em>statement → statements:</em> adding more unconditional statements.</li>
+                        <li><em>unconditional → if:</em> splitting the execution path</li>
+                        <li><em>scalar → array:</em></li>
+                        <li><em>array → container:</em></li>
+                        <li><em>statement → recursion:</em></li>
+                        <li><em>if → while:</em></li>
+                        <li><em>expression → function:</em> replacing an expression with a function or algorithm</li>
+                        <li><em>variable → assignment:</em> replacing the value of a variable.</li>
+                    </ol>
+                    <p style="font-size: 40%; line-height: 110%;">
+                        <a href="http://blog.8thlight.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html">http://blog.8thlight.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html</a>
+                    </p>
+                </section>
+                <section>
+                    <h1>Q&A</h1>
+                </section>
+
+            </div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+                overview: false,
+				history: true,
+				center: true,
+                mouseWheel: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
