@@ -33,8 +33,12 @@
     color: #23AD2E;
 }
 
-.blue {
-    color: #4242c4;
+.orange {
+    color: #FF6600;
+}
+
+.black {
+    color: black;
 }
 
 .reveal section img.without_border {
