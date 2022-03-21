@@ -30,6 +30,6 @@ body {
     vertical-align: middle;
 }
 
-.fa-brands {
+.fa, .fa-brands {
     color: #FF2C4B;
 }
